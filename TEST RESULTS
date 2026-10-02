@@ -1,0 +1,40 @@
+Cyberforteca 0.31 validation
+Python: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+
+test_01_known_device_does_not_grant_authority (tests.test_boundaries.BoundaryTests.test_01_known_device_does_not_grant_authority) ... ok
+test_02_acceptable_attestation_does_not_grant_authority (tests.test_boundaries.BoundaryTests.test_02_acceptable_attestation_does_not_grant_authority) ... ok
+test_03_known_device_valid_session_unauthorized_app_denied (tests.test_boundaries.BoundaryTests.test_03_known_device_valid_session_unauthorized_app_denied) ... ok
+test_04_authorized_app_gets_exact_capability (tests.test_boundaries.BoundaryTests.test_04_authorized_app_gets_exact_capability) ... ok
+test_05_restriction_requires_explicit_policy_mapping (tests.test_boundaries.BoundaryTests.test_05_restriction_requires_explicit_policy_mapping) ... ok
+test_06_dangerous_authority_without_fallback_denied (tests.test_boundaries.BoundaryTests.test_06_dangerous_authority_without_fallback_denied) ... ok
+test_07_recovery_preserves_only_explicit_ownership_scope (tests.test_boundaries.BoundaryTests.test_07_recovery_preserves_only_explicit_ownership_scope) ... ok
+test_08_app_identity_is_distinct_from_device (tests.test_boundaries.BoundaryTests.test_08_app_identity_is_distinct_from_device) ... ok
+test_09_session_identity_is_distinct_from_counters (tests.test_boundaries.BoundaryTests.test_09_session_identity_is_distinct_from_counters) ... ok
+test_10_audit_explains_all_three_decisions_without_secrets (tests.test_boundaries.BoundaryTests.test_10_audit_explains_all_three_decisions_without_secrets) ... ok
+test_11_unknown_identity_denied_without_malicious_classification (tests.test_boundaries.BoundaryTests.test_11_unknown_identity_denied_without_malicious_classification) ... ok
+test_12_liveness_independent_from_compromise (tests.test_boundaries.BoundaryTests.test_12_liveness_independent_from_compromise) ... ok
+test_attestation_freshness_is_half_open_and_not_future (tests.test_boundaries.BoundaryTests.test_attestation_freshness_is_half_open_and_not_future) ... ok
+test_attestation_subject_session_challenge_and_policy_binding (tests.test_boundaries.BoundaryTests.test_attestation_subject_session_challenge_and_policy_binding) ... ok
+test_audit_rejects_outcome_from_different_snapshot (tests.test_boundaries.BoundaryTests.test_audit_rejects_outcome_from_different_snapshot) ... ok
+test_capability_operation_mismatch_and_app_device_mismatch_rejected (tests.test_boundaries.BoundaryTests.test_capability_operation_mismatch_and_app_device_mismatch_rejected) ... ok
+test_channel_session_direction_and_status (tests.test_boundaries.BoundaryTests.test_channel_session_direction_and_status) ... ok
+test_compromise_is_separate_policy_hold (tests.test_boundaries.BoundaryTests.test_compromise_is_separate_policy_hold) ... ok
+test_contradictory_decision_grant_rejected (tests.test_boundaries.BoundaryTests.test_contradictory_decision_grant_rejected) ... ok
+test_denied_audit_cannot_claim_successful_execution (tests.test_boundaries.BoundaryTests.test_denied_audit_cannot_claim_successful_execution) ... ok
+test_empty_recovery_scope_has_no_authority (tests.test_boundaries.BoundaryTests.test_empty_recovery_scope_has_no_authority) ... ok
+test_evidence_cannot_be_substituted_for_result (tests.test_boundaries.BoundaryTests.test_evidence_cannot_be_substituted_for_result) ... ok
+test_hmai_has_no_implicit_policy_privilege (tests.test_boundaries.BoundaryTests.test_hmai_has_no_implicit_policy_privilege) ... ok
+test_invalid_scalar_and_mutable_container_inputs_rejected (tests.test_boundaries.BoundaryTests.test_invalid_scalar_and_mutable_container_inputs_rejected) ... ok
+test_json_has_fixed_order_no_floats_and_schema_discriminator (tests.test_boundaries.BoundaryTests.test_json_has_fixed_order_no_floats_and_schema_discriminator) ... ok
+test_no_ambiguous_policy_or_cross_resource_fallback (tests.test_boundaries.BoundaryTests.test_no_ambiguous_policy_or_cross_resource_fallback) ... ok
+test_old_request_does_not_transfer_to_new_session (tests.test_boundaries.BoundaryTests.test_old_request_does_not_transfer_to_new_session) ... ok
+test_packet_metadata_binds_session_counter_and_direction (tests.test_boundaries.BoundaryTests.test_packet_metadata_binds_session_counter_and_direction) ... ok
+test_policy_version_and_digest_both_must_match (tests.test_boundaries.BoundaryTests.test_policy_version_and_digest_both_must_match) ... ok
+test_recovery_does_not_require_normal_user_credential (tests.test_boundaries.BoundaryTests.test_recovery_does_not_require_normal_user_credential) ... ok
+test_recovery_is_session_app_owner_resource_and_time_bound (tests.test_boundaries.BoundaryTests.test_recovery_is_session_app_owner_resource_and_time_bound) ... ok
+test_session_expiration_revocation_and_clock_domain (tests.test_boundaries.BoundaryTests.test_session_expiration_revocation_and_clock_domain) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.021s
+
+OK
